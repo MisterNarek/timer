@@ -2,6 +2,10 @@
     font-family: 'Digital';
     src: url(digital.ttf);
 }
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(NotoSans.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +18,9 @@ body {
     min-height: 100vh;
 }
 .timer {
+    padding: 20px;
+    height: 300px;
+    position: relative;
     user-select: none;
     color: #fff;
     font-size: 12em;
@@ -37,4 +44,23 @@ body {
                 1px 22px 10px rgba(16,16,16,0.2),
                 1px 25px 35px rgba(16,16,16,0.2),
                 1px 30px 60px rgba(16,16,16,0.4);
+}
+.timerButton {
+    padding: 5px 10px;
+    font-family: 'Noto Sans';
+    letter-spacing: 2px;
+    background: #ecf0f1;
+    border: none;
+    color: #888;
+    box-shadow: -2px -2px 3px rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: 0;
+    outline: none;
+}
+.timerButton:hover {
+    color: #27ae60;
+    cursor: pointer;
+}
+.timerButton:active {
+    box-shadow: inset -2px -2px 2px rgba(0,0,0,0.3);
 }
